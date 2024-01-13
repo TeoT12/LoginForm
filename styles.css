@@ -1,0 +1,147 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background: url("./sparkle.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 450px;
+  height: 550px;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #342d42;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+.inputbox {
+  position: relative;
+  margin: 30px 0;
+  width: 310px;
+  border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  transition: 0.5s;
+  pointer-events: none;
+  font-weight: 600;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+  top: -15px;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0 35px 0 5px;
+  color: #fff;
+}
+
+.fa-solid {
+  position: absolute;
+  right: 8px;
+  top: 20px;
+  font-size: 1.2em;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 10px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.forgot {
+  margin: 10px 0;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#remember {
+  cursor: pointer;
+  accent-color: #162938;
+}
+
+#agree {
+  cursor: pointer;
+  accent-color: #162938;
+}
+
+.register {
+  margin: 25px 0 10px;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.login-off {
+  display: none;
+}
+
+.reg-off {
+  display: none;
+}
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .form-box {
+    width: 400px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+  }
+}
